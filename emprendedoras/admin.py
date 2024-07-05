@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from emprendedoras.models import Emprendedora, ImagenEmprendimiento
+from emprendedoras.models import Emprendedora, Producto
 
 admin.site.register(Emprendedora)
-admin.site.register(ImagenEmprendimiento)
+admin.site.register(Producto)

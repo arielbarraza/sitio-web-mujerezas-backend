@@ -1,8 +1,8 @@
 from django.db import models
 
 
-class ImagenEmprendimiento(models.Model):
-    imagen = models.ImageField(upload_to='imagens/')
+class Producto(models.Model):
+    imagen = models.ImageField(upload_to='imagenes/productos')
 
 
 class Emprendedora(models.Model):
@@ -10,6 +10,6 @@ class Emprendedora(models.Model):
     apellidos = models.CharField(max_length=50)
     informacion = models.TextField()
     correo = models.EmailField()
-    foto = models.ImageField(upload_to='fotos/')
+    foto = models.ImageField(upload_to='imagenes/emprendedoras')
     telefono = models.CharField(max_length=50)
-    productos = models.ManyToManyField(ImagenEmprendimiento)
+    productos = models.ManyToManyField(Producto)
