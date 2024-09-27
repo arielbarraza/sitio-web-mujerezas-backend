@@ -2,7 +2,7 @@ from rest_framework.generics import ListAPIView, RetrieveAPIView
 from rest_framework.permissions import AllowAny
 
 from noticias.models import Noticia
-from noticias.serializers.public_serializers import PublicNoticiasListSerializer
+from noticias.serializers.public_serializers import PublicNoticiasListSerializer, PublicNoticiaDetalleSerializer
 
 
 class PublicNoticiasListView(ListAPIView):
@@ -20,4 +20,4 @@ class PublicNoticiasDestacadasView(ListAPIView):
 class PublicNoticiaDetalleView(RetrieveAPIView):
     permission_classes = (AllowAny,)
     queryset = Noticia.objects.all()
-    serializer_class = PublicNoticiasListSerializer
+    serializer_class = PublicNoticiaDetalleSerializer
