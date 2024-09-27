@@ -7,4 +7,5 @@ class Noticia(models.Model):
     cuerpo = models.TextField()
     imagen = models.ImageField(upload_to="imagenes/noticias")
     fecha_creacion = models.DateTimeField(auto_now_add=True)
+    destacada = models.BooleanField(default=False)
 
