@@ -20,5 +20,6 @@ from django.urls import path, include
 urlpatterns = [
     path('noticias/', include('noticias.urls.public_urls')),
     path('admin/noticias/', include('noticias.urls.admin_urls')),
-    path('admin/capsulas/', include('capsulas.urls.admin_urls'))
+    path('admin/capsulas/', include('capsulas.urls.admin_urls')),
+    path('admin/inicio/carrusel/', include('inicio.urls.admin_urls'))
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

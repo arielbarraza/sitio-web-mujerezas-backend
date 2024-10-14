@@ -1,3 +1,7 @@
 from django.db import models
 
-# Create your models here.
+
+class CarruselInicioImagen(models.Model):
+    posicion = models.PositiveSmallIntegerField(unique=True)
+    imagen = models.ImageField(upload_to='archivos/imagenes')
+    url_redirect = models.URLField(null=True)
