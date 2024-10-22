@@ -19,3 +19,9 @@ class CarruselInicioImagenAdminSerializer(serializers.ModelSerializer):
 
         validated_data['posicion'] = posicion
         return super().create(validated_data)
+
+
+class CarruselInicioImagenOrdenarEliminarSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = CarruselInicioImagen
+        fields = ['id', 'posicion']
