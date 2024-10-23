@@ -1,7 +1,8 @@
 from django.urls import path
 
+from capsulas.views.public_views import PublicCapsulasListView, PublicCapsulasDestacadasView
 
 urlpatterns = [
-    #path(r'todas/', PublicNoticiasListView.as_view(), name=r'noticias_list'),
-    #path(r'destacadas/', PublicNoticiasDestacadasView.as_view(), name=r'noticias_destacadas'),
+    path(r'todas/', PublicCapsulasListView.as_view(), name=r'capsulas_list'),
+    path(r'destacadas/', PublicCapsulasDestacadasView.as_view(), name=r'capsulas_destacadas'),
 ]
