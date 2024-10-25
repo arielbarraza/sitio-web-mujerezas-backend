@@ -5,8 +5,7 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 
 from inicio.models import CarruselInicioImagen
-from inicio.serializers.admin_serializers import CarruselInicioImagenAdminSerializer, \
-    CarruselInicioImagenOrdenarEliminarSerializer
+from inicio.serializers.admin_serializers import CarruselInicioImagenAdminSerializer
 
 
 class AdminCarruselInicioImagenListView(ListAPIView):

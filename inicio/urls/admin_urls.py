@@ -1,6 +1,6 @@
 from django.urls import path
 
-from inicio.views import AdminCarruselInicioImagenCreateView, AdminCarruselInicioImagenListView, \
+from inicio.views.admin_views import AdminCarruselInicioImagenCreateView, AdminCarruselInicioImagenListView, \
     AdminCarruselInicioImagenRetrieveView, AdminCarruselInicioImagenUpdateView, AdminCarruselInicioOrdenarView
 
 urlpatterns = [
